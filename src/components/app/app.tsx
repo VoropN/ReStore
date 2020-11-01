@@ -13,8 +13,8 @@ export const App = () => {
       <ShopHeader numItems={numItems} total={orderTotal} />
       <div className='main'>
         <Switch>
-          <Route path='/' exact component={HomePage} />
-          <Route path='/cart' component={CartPage} />
+          <Route path='/ReStore/' exact component={HomePage} />
+          <Route path='/ReStore/cart/' component={CartPage} />
         </Switch>
       </div>
     </>
