@@ -1,0 +1,32 @@
+.book-image {
+  max-width: 120px;
+  border-radius: 5px;
+}
+
+.book-content {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+.book-content {
+  margin: 25px 0 5px 25px;
+}
+
+.book-content * {
+  width: 100%;
+}
+
+.btn-add {
+  width: 120px;
+}
+
+.book-author {
+  margin: 0 0 20px;
+}
+
+.book-price {
+  font-weight: 500;
+  padding: 10px 0;
+}
