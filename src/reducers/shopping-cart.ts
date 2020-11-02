@@ -1,7 +1,7 @@
 
 const updateBook = (items: any[], booId: number, quantity: number) => {
   const idx = items.findIndex((item) => item.id === booId);
-  const { id, title, price, total, count }: any = items[idx];
+  const { id, title, price, count }: any = items[idx];
 
   if (count + quantity <= 0) {
     return [
@@ -11,7 +11,7 @@ const updateBook = (items: any[], booId: number, quantity: number) => {
   }
 
   const newCount = count + quantity;
-  const newBook = { id, title, price, total: total + price * newCount, count: newCount };
+  const newBook = { id, title, price, total: price * newCount, count: newCount };
 
   return [
     ...items.slice(0, idx),
